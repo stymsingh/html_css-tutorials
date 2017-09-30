@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+ 
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+   
+    <style>
+      .home-container {
+     display: -webkit-flex;
+     -webkit-flex-direction: column;
+     height: 100%;
+}
+.home-container > .row {
+     -webkit-flex: 1;
+}
+.header {
+     -webkit-flex: 1.5 !important;
+     -webkit-align-items: center;
+     background-color: #1abc9c;
+}
+ 
+.icon-row {
+     -webkit-align-items: center;
+
+}
+
+.col{
+  margin-bottom: 20px;
+     margin-top: 20px;
+}
+    </style>
+  </head>
+  <body ng-app="starter">
+ 
+    <ion-pane>
+      <ion-content scroll="false">
+ 
+<section class = "home-container">
+ 
+<div class = "row header">
+ 
+<div class = "col text-center">
+              [LOGO / HEADER]
+            </div>
+ 
+          </div>
+ 
+ 
+<div class = "row icon-row">
+ 
+<div class = "col text-center">
+              <button class = "button button-positive">Icon</button>
+Title
+            </div></div>
+ 
+ <div class = "row icon-row">
+<div class = "col text-center">
+              <button class = "button button-positive">Icon</button>
+Title
+            </div>
+ 
+          </div>
+
+ 
+ <div class = "row icon-row">
+ 
+<div class = "col text-center" style="background-color:blue;">
+              <img src="data:image/jpeg;base64,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" alt=""  style="float:left;">
+              <h2>hello world</h2>
+            </div></div>
+ 
+ <div class = "row icon-row">
+<div class = "col text-center">
+              <button class = "button button-positive">Icon</button>
+Title
+            </div>
+ 
+          </div>
+
+ 
+        </section>
+ 
+      </ion-content>
+    </ion-pane>
+ 
+  </body>
+</html>
+ 
+ 
